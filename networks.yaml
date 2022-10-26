@@ -76,3 +76,21 @@ optimism:
     address: "0x2E96068b3D5B5BAE3D7515da4A1D2E52d08A2647"
     transactionHash: "0x4afed3f4aaa2e32a3313db5fe5e42faf54b4d59f8003bed8316914510c4112f7"
     startBlock: 9052485
+mumbai:
+  network: mumbai
+  gaugeFactory:
+    address: "0xeE6aEd29Dbab9E56819134E9F76FC9e492CD8Bd4"
+    transactionHash: "0xc46f004ecfc0b4cb21da62e0fa07d4334128c25d0e31a9dc165382b67de488ee"
+    startBlock: 28566702
+  gaugeV2Factory: # Fake entry
+    address: "0x3b8cA519122CdD8efb272b0D3085453404B25bD0"
+    transactionHash: "0xf4281462a669f2e6a10ffcee1e24e60ce807acc8cfd8fc86697050b99035f0d0"
+    startBlock: 28566702
+  gaugeController:
+    address: "0xe9fBFdDFfa5152Bbe4eB5e38e4fA1aD8b5c893Dd"
+    transactionHash: "0x2e1c1b1401862a71b9edb381e455c6b0697eab31465c7cd0c22216703d15ca97"
+    startBlock: 28566375
+  votingEscrow:
+    address: "0xC3Ba2291E0A3C87A83eC9A259BaBA3779738A47d"
+    transactionHash: "0x9e06efdcc9367ee49baf67cb04cb6705c2367053813c71e18af0854551ef81d1"
+    startBlock: 28566373
