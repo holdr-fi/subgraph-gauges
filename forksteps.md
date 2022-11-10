@@ -19,5 +19,3 @@ The .ts files in `src/mappings` are not Typescript files, but AssemblyScript whi
 6. `graph deploy --product hosted-service <REPO_NAME/GRAPH_NAME> subgraph.<NETWORK>.yaml` => Build and deploy subgraph to specified Hosted Service project
 
 </br>
-
-graph deploy --product hosted-service kyzooghost/solace-swap-gauges-test subgraph.mumbai.yaml
