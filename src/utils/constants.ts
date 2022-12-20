@@ -12,6 +12,8 @@ export class AddressByNetwork {
   public goerli: string;
 
   public mumbai: string;
+
+  public aurora: string;
 }
 
 let network: string = dataSource.network();
@@ -20,6 +22,7 @@ let controllerAddressByNetwork: AddressByNetwork = {
   mainnet: '0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD',
   goerli: '0xBB1CE49b16d55A1f2c6e88102f32144C7334B116',
   mumbai: '0xe9fBFdDFfa5152Bbe4eB5e38e4fA1aD8b5c893Dd',
+  aurora: '0x2B69fc5903B3a9eFeBF88ff23A90B229A9791674',
 };
 
 function forNetwork(
@@ -32,7 +35,13 @@ function forNetwork(
   if (network == 'goerli') {
     return Address.fromString(addressByNetwork.goerli);
   }
-  return Address.fromString(addressByNetwork.mumbai);
+  if (network == 'mumbai') {
+    return Address.fromString(addressByNetwork.mumbai);
+  }
+  if (network == 'aurora') {
+    return Address.fromString(addressByNetwork.aurora);
+  }
+  throw new Error('Did not provide supported network');
 }
 
 export const CONTROLLER_ADDRESS = forNetwork(
@@ -40,8 +49,7 @@ export const CONTROLLER_ADDRESS = forNetwork(
   network,
 );
 export const VAULT_ADDRESS = Address.fromString(
-  // '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
-  '0x7e5D79D67A1dAc16E8024B99c4B8A8Ec37C5eA2B',
+  '0x364d44dFc31b3d7b607797B514348d57Ad0D784E',
 );
 
 export const ARBITRUM_ROOT_GAUGE_FACTORY = Address.fromString(

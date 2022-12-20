@@ -94,3 +94,21 @@ mumbai:
     address: "0xC3Ba2291E0A3C87A83eC9A259BaBA3779738A47d"
     transactionHash: "0x9e06efdcc9367ee49baf67cb04cb6705c2367053813c71e18af0854551ef81d1"
     startBlock: 28566373
+aurora:
+  network: aurora
+  gaugeFactory:
+    address: "0x868655EC4230fF619e1d484fc51e97b5887694d1"
+    transactionHash: "0x63bb68eacf831ba3482eb95a7661e6d68c64693be1b9fe52c67ba77c9fe69c30"
+    startBlock: 81062000
+  gaugeV2Factory: # Fake entry
+    address: "0x3b8cA519122CdD8efb272b0D3085453404B25bD0"
+    transactionHash: "0xf4281462a669f2e6a10ffcee1e24e60ce807acc8cfd8fc86697050b99035f0d0"
+    startBlock: 81062000
+  gaugeController:
+    address: "0x2B69fc5903B3a9eFeBF88ff23A90B229A9791674"
+    transactionHash: "0x57251a77a3cc09d558854755560fc4d1a1c5b5baa1e4c50e9b82c92b6ca59778"
+    startBlock: 81062000
+  votingEscrow:
+    address: "0x5ed1e3D53AfdB0d0bc8661e056dffCD51c95bb9D"
+    transactionHash: "0x182e5ae6b3e8b8d779ab1f0aaa19620957aaa58a4832073912bf0498faa02603"
+    startBlock: 81062000
