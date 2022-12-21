@@ -38,10 +38,7 @@ function forNetwork(
   if (network == 'mumbai') {
     return Address.fromString(addressByNetwork.mumbai);
   }
-  if (network == 'aurora') {
-    return Address.fromString(addressByNetwork.aurora);
-  }
-  throw new Error('Did not provide supported network');
+  return Address.fromString(addressByNetwork.aurora);
 }
 
 export const CONTROLLER_ADDRESS = forNetwork(
